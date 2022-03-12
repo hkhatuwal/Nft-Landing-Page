@@ -13,13 +13,13 @@ const Footer = () => {
 						</a>
 						<div className="mt-6">
 							<div className="flex space-x-4">
-								<a href="https://twitter.com/prime_protocol">
+								<a href="https://twitter.com/prime_protocol" target="_blank">
 									<img src="/assets/icons/twitter.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Twitter" />
 								</a>
-								<a href="https://discord.gg/KdskpZ7N3y">
+								<a href="https://discord.gg/KdskpZ7N3y" target="_blank">
 									<img src="/assets/icons/discord.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Discord" />
 								</a>
-								<a href="https://medium.com/@primeprotocol">
+								<a href="https://medium.com/@primeprotocol" target="_blank">
 									<img src="/assets/icons/medium.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Medium" />
 								</a>
 							</div>
