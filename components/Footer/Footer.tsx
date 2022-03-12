@@ -13,9 +13,15 @@ const Footer = () => {
 						</a>
 						<div className="mt-6">
 							<div className="flex space-x-4">
-								<img src="/assets/icons/twitter.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Twitter" />
-								<img src="/assets/icons/discord.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Discord" />
-								<img src="/assets/icons/medium.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Medium" />
+								<a href="https://twitter.com/prime_protocol">
+									<img src="/assets/icons/twitter.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Twitter" />
+								</a>
+								<a href="https://discord.gg/KdskpZ7N3y"></a>
+									<img src="/assets/icons/discord.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Discord" />
+								</a>
+								<a href="https://medium.com/@primeprotocol">
+									<img src="/assets/icons/medium.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Medium" />
+								</a>
 							</div>
 						</div>
 					</div>
