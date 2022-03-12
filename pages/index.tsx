@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 				<section className="">
 					<div className="mt-[130px]">
 						<h1 className="text-4xl font-bold text-center text-white font-inter md:text-5xl">
-							Introducing <br /> Prime Protocol
+							Prime Protocol
 						</h1>
 						<p className="m-auto mt-6 font-mono text-sm text-center text-white md:w-1/2 md:text-base">
 							We're building the first natively cross chain prime brokerage. We believe the future is multi-chain, and DeFi needs new financial
