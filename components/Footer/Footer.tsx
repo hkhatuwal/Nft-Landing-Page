@@ -16,7 +16,7 @@ const Footer = () => {
 								<a href="https://twitter.com/prime_protocol">
 									<img src="/assets/icons/twitter.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Twitter" />
 								</a>
-								<a href="https://discord.gg/KdskpZ7N3y"></a>
+								<a href="https://discord.gg/KdskpZ7N3y">
 									<img src="/assets/icons/discord.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Discord" />
 								</a>
 								<a href="https://medium.com/@primeprotocol">
