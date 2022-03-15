@@ -9,7 +9,7 @@ const Header = () => {
 			<div className="flex justify-between">
 				<div className="m-auto md:m-0">
 					<a href="/">
-						<img src="/assets/prime-logo-white.svg" className="w-12" alt="Prime Protocol" />
+						<img src="/assets/prime-logo-white.svg" className="w-10" alt="Prime Protocol" />
 					</a>
 				</div>
 				<div className="hidden space-x-12 font-mono text-white md:block">
@@ -19,6 +19,9 @@ const Header = () => {
 					<a className="font-medium text-white transition-all duration-200 opacity-70 hover:opacity-100" href="#roadmap">
 						Roadmap
 					</a>
+					{/* <a className="font-medium text-white transition-all duration-200 opacity-70 hover:opacity-100" href="#">
+						Whitepaper
+					</a> */}
 					<a className="font-medium text-white transition-all duration-200 opacity-70 hover:opacity-100" href="#PUSD">
 						$PUSD
 					</a>
