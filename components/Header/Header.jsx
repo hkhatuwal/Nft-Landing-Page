@@ -19,9 +19,6 @@ const Header = () => {
 					<a className="font-medium text-white transition-all duration-200 opacity-70 hover:opacity-100" href="#roadmap">
 						Roadmap
 					</a>
-					<a className="font-medium text-white transition-all duration-200 opacity-70 hover:opacity-100" href="#">
-						Whitepaper
-					</a>
 					<a className="font-medium text-white transition-all duration-200 opacity-70 hover:opacity-100" href="#PUSD">
 						$PUSD
 					</a>
