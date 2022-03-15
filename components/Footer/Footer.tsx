@@ -26,23 +26,27 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className="mt-12 flex w-full space-x-[50px] text-white md:mt-0 md:justify-end">
-						<div>
+						{/* <div>
 							<h5 className="font-mono font-bold uppercase"> Developers</h5>
-							<div className="mt-6 space-y-1 text-sm">
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Sign Up</li>
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Documentation</li>
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Community Discord</li>
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Newsletter</li>
-							</div>
-						</div>
+							<div className="mt-6 space-y-1 text-sm"> */}
+								{/* <li className="font-mono list-none cursor-pointer hover:font-semibold">Sign Up</li>
+								<li className="font-mono list-none cursor-pointer hover:font-semibold">Documentation</li> */}
+
+									{/* <li className="font-mono list-none cursor-pointer hover:font-semibold">Newsletter</li> */}
+							{/* </div>
+						</div> */}
 						<div>
 							<h5 className="font-mono font-bold uppercase"> Contact</h5>
 							<div className="mt-6 space-y-1 text-sm ">
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">General Inquiries</li>
+								{/* <li className="font-mono list-none cursor-pointer hover:font-semibold">General Inquiries</li>
 								<li className="font-mono list-none cursor-pointer hover:font-semibold">Press</li>
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Sales</li>
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Discord</li>
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Email</li>
+								<li className="font-mono list-none cursor-pointer hover:font-semibold">Sales</li> */}
+								<a href="https://discord.gg/KdskpZ7N3y" target="_blank">
+									<li className="font-mono list-none cursor-pointer hover:font-semibold">Discord</li>
+								</a>
+								<a href="mailto:contact@primeprotocol.xyz"></a>
+									<li className="font-mono list-none cursor-pointer hover:font-semibold">Email</li>
+								</a>
 							</div>
 						</div>
 					</div>
