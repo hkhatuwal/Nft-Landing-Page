@@ -44,7 +44,7 @@ const Footer = () => {
 								<a href="https://discord.gg/KdskpZ7N3y" target="_blank">
 									<li className="font-mono list-none cursor-pointer hover:font-semibold">Discord</li>
 								</a>
-								<a href="mailto:contact@primeprotocol.xyz"></a>
+								<a href="mailto:contact@primeprotocol.xyz">
 									<li className="font-mono list-none cursor-pointer hover:font-semibold">Email</li>
 								</a>
 							</div>
