@@ -37,17 +37,26 @@ const Footer = () => {
 						</div> */}
 						<div>
 							<h5 className="font-mono font-bold uppercase"> Contact</h5>
-							<div className="mt-6 space-y-1 text-sm ">
+							<div className="mt-6 space-y-2 text-sm ">
 								{/* <li className="font-mono list-none cursor-pointer hover:font-semibold">General Inquiries</li> */}
 								{/* <li className="font-mono list-none cursor-pointer hover:font-semibold">Press</li>
 								<li className="font-mono list-none cursor-pointer hover:font-semibold">Sales</li> */}
-								<a href="https://discord.com/invite/KdskpZ7N3y">
-									{' '}
-									<li className="font-mono list-none cursor-pointer hover:font-semibold">Discord</li>
-								</a>
-								<a href="mailto:contact@primeprotocol.xyz">
-									<li className="font-mono list-none cursor-pointer hover:font-semibold">Email</li>
-								</a>
+
+								<li className="font-mono list-none cursor-pointer hover:font-semibold">
+									<a href="https://discord.com/invite/KdskpZ7N3y">Discord</a>
+								</li>
+
+								<li className="font-mono list-none cursor-pointer hover:font-semibold">
+									<a href="mailto:contact@primeprotocol.xyz">Email</a>
+								</li>
+
+								<li className="font-mono list-none cursor-pointer hover:font-semibold">
+									<a href="https://twitter.com/prime_protocol">Twitter</a>
+								</li>
+
+								<li className="font-mono list-none cursor-pointer hover:font-semibold">
+									<a href="https://medium.com/@primeprotocol">Medium</a>
+								</li>
 							</div>
 						</div>
 					</div>

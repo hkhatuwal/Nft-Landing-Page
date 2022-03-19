@@ -25,6 +25,7 @@ export default function Document() {
 				<link rel="icon" type="image/png" sizes="96x96" href="/assets/meta/favicon-96x96.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="/assets/meta/favicon-16x16.png" />
 				<link rel="manifest" href="/assets/meta/manifest.json" />
+				<link rel="shortcut icon" href="/assets/meta/favicon.ico" />
 				<meta name="msapplication-TileColor" content="#ffffff" />
 				<meta name="msapplication-TileImage" content="/assets/meta/ms-icon-144x144.png" />
 				<meta name="theme-color" content="#005EFF"></meta>
