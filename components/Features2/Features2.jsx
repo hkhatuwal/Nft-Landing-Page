@@ -1,7 +1,7 @@
 const Features2 = (props) => {
 	return (
-		<section id="PUSD" className="mt-6 py-2 text-center md:mt-20 md:py-[100px]">
-			<h4 className="font-semibold font-inter text-7xl text-brand-primary"> $PUSD </h4>
+		<section id="USP" className="mt-6 py-2 text-center md:mt-20 md:py-[100px]">
+			<h4 className="font-semibold font-inter text-7xl text-brand-primary"> $USP </h4>
 			<p className="m-auto mt-6 font-mono text-brand-primary md:w-1/3">
 				One decentralized stablecoin <br /> for every DeFi ecosystem.
 			</p>
@@ -13,19 +13,19 @@ const Features2 = (props) => {
 						<div className="w-full">
 							<img src="/assets/icons/overcollaterized.svg" className="w-12 m-auto transition-all duration-150 hover:scale-110" />
 							<p className="m-auto mt-[20px] max-w-[424px] font-mono text-brand-primary">
-								PUSD is an overcollateralized stablecoin, stabilized by Prime's monetary policy
+								USP is an overcollateralized stablecoin, stabilized by Prime's monetary policy
 							</p>
 						</div>
 						<div className="w-full">
-							<img src="/assets/icons/PUSD.png" className="w-16 m-auto transition-all duration-150 hover:scale-110" />
-							<p className="m-auto mt-[20px] max-w-[424px] font-mono text-brand-primary">Borrow PUSD at low rates with zero deposit fees</p>
+							<img src="/assets/icons/USP.png" className="w-16 m-auto transition-all duration-150 hover:scale-110" />
+							<p className="m-auto mt-[20px] max-w-[424px] font-mono text-brand-primary">Borrow USP at low rates with zero deposit fees</p>
 						</div>
 					</div>
 					<div className="mt-[60px] flex flex-col space-y-12 md:flex-row md:space-y-0">
 						<div className="w-full">
 							<img src="/assets/icons/liquidiations.svg" className="w-12 m-auto transition-all duration-150 hover:scale-110" />
 							<p className="m-auto mt-[20px] max-w-[424px] font-mono text-brand-primary">
-								Participate in liquidations and arbitrage opportunity to help stabilize PUSD
+								Participate in liquidations and arbitrage opportunity to help stabilize USP
 							</p>
 						</div>
 						<div className="w-full">
