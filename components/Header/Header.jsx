@@ -27,7 +27,7 @@ const Header = () => {
 					</a>
 					<a
 						className="font-medium text-white transition-all duration-200 opacity-70 hover:opacity-100"
-						href="https://angel.co/company/prime-protocol/jobs"
+						href="https://boards.greenhouse.io/primeprotocol"
 						target={'_blank'}
 						rel={'noopener noreferrer'}
 					>
