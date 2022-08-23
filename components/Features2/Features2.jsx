@@ -17,7 +17,7 @@ const Features2 = (props) => {
 							</p>
 						</div>
 						<div className="w-full">
-							<img src="/assets/icons/cross-margin.svg" className="w-16 m-auto transition-all duration-150 hover:scale-110" />
+							<img src="/assets/icons/borrow-USP.svg" className="w-16 m-auto transition-all duration-150 hover:scale-110" />
 							<p className="m-auto mt-[20px] max-w-[424px] font-mono text-brand-primary">Borrow USP at low rates with zero deposit fees</p>
 						</div>
 					</div>

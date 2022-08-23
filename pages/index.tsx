@@ -48,7 +48,7 @@ const Home: NextPage = () => {
 							<GridCell
 								iconURL="/assets/icons/universal-monetary-policy.svg"
 								title="Universal Monetary Policy"
-								description="One competitive interest rate for every loan"
+								description="One competitive interest rate for every loan."
 							/>
 						</div>
 					</div>
