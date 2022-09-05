@@ -33,6 +33,17 @@ const Header = () => {
 					>
 						Careers
 					</a>
+
+					<a
+						className="font-medium text-white transition-all duration-200 opacity-70 hover:opacity-100"
+						href="https://twitter.com/prime_protocol"
+						target={'_blank'}
+						rel={'noopener noreferrer'}
+					>
+						Twitter
+					</a>
+
+
 				</div>
 			</div>
 		</header>
