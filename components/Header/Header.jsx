@@ -6,6 +6,13 @@
 const Header = () => {
 	return (
 		<header className="w-full">
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-NYW1ZJC3Q6"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-NYW1ZJC3Q6');
+			</script>
 			<div className="flex justify-between">
 				<div className="m-auto md:m-0">
 					<a href="/">
