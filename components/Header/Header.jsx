@@ -11,7 +11,7 @@ const Header = () => {
 				window.dataLayer = window.dataLayer || [];
 				function gtag(){dataLayer.push(arguments);}
 				gtag('js', new Date());
-				gtag('config', 'G-NYW1ZJC3Q6');
+				gtag('config', 'G-KGQMHPCCG7');
 			</script>
 			<div className="flex justify-between">
 				<div className="m-auto md:m-0">
