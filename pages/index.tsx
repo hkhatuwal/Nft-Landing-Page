@@ -11,6 +11,13 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-NYW1ZJC3Q6"></script>
+				<script>
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'G-KGQMHPCCG7');
+				</script>
 				<title> Prime Protocol – Cross Chain Prime Brokerage </title>
 			</Head>
 			<section className="min-h-screen bg-brand-primary py-20 px-5 md:px-[100px]">
