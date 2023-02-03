@@ -11,6 +11,10 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
+
+				<script>
+					window.dataLayer = window.dataLayer || [];
+				</script>
 				<script async src="https://www.googletagmanager.com/gtag/js?id=G-NYW1ZJC3Q6"></script>
 				<script>
 					window.dataLayer = window.dataLayer || [];
