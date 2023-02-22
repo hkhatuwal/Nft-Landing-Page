@@ -33,6 +33,10 @@
     .wrapper {
         @apply mx-auto max-w-full px-5 md:px-[45px] lg:px-[65px] 2xl:max-w-[1300px] 2xl:px-0;
     }
+
+    .show-mobile-nav {
+        @apply !fixed h-screen bg-custom-black-bg;
+    }
 }
 
 .hero__area {

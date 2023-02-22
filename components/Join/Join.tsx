@@ -3,7 +3,7 @@ const Join = () => {
         <section className="bg-custom-blue py-[50px] md:py-[120px]">
             <div className="wrapper">
                 <div className="mx-auto max-w-[1095px] text-center">
-                    <h2 className="mb-[25px] text-[40px] leading-[46px] md:text-[48px] md:leading-[54px]">
+                    <h2 className="mb-[25px] text-[30px] leading-[38px] md:text-[48px] md:leading-[54px]">
                         Join the Prime community
                     </h2>
                     <p>
@@ -13,10 +13,11 @@ const Join = () => {
                         date with all things Prime!
                     </p>
 
-                    <ul className="mt-[100px] flex items-center justify-center gap-[30px]">
+                    <ul className="mt-[30px] flex items-center justify-center gap-[20px] md:mt-[60px] md:gap-[30px] lg:mt-[100px]">
                         <li>
                             <a href="#" className="h-[55px] w-auto">
                                 <img
+                                    className="object-contain"
                                     src="/assets/images/twitter.png"
                                     alt="twitter"
                                 />
@@ -25,6 +26,7 @@ const Join = () => {
                         <li>
                             <a href="#" className="h-[55px] w-auto">
                                 <img
+                                    className="object-contain"
                                     src="/assets/images/discord.png"
                                     alt="discord"
                                 />
@@ -33,6 +35,7 @@ const Join = () => {
                         <li>
                             <a href="#" className="h-[55px] w-auto">
                                 <img
+                                    className="object-contain"
                                     src="/assets/images/telegram.png"
                                     alt="telegram"
                                 />
@@ -42,6 +45,7 @@ const Join = () => {
                         <li>
                             <a href="#" className="h-[55px] w-auto">
                                 <img
+                                    className="object-contain"
                                     src="/assets/images/medium.png"
                                     alt="medium"
                                 />
@@ -50,6 +54,7 @@ const Join = () => {
                         <li>
                             <a href="#" className="h-[55px] w-auto">
                                 <img
+                                    className="object-contain"
                                     src="/assets/images/youtube.png"
                                     alt="youtube"
                                 />
@@ -58,6 +63,7 @@ const Join = () => {
                         <li>
                             <a href="#" className="h-[55px] w-auto">
                                 <img
+                                    className="object-contain"
                                     src="/assets/images/linkedin.png"
                                     alt="linkedin"
                                 />

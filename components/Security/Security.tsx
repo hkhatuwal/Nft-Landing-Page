@@ -1,13 +1,13 @@
 const Security = () => {
     return (
-        <section className="py-[50px] md:py-[90px]">
+        <section className="py-[60px] md:py-[90px]">
             <div className="wrapper">
-                <div className="flex flex-col gap-[50px] xl:flex-row xl:items-start">
+                <div className="flex flex-col gap-[60px] md:gap-[80px] xl:flex-row xl:items-start xl:gap-[50px]">
                     {/* Single Item */}
                     <div className="flex-1">
                         <div className="xl:max-w-[280px]">
                             <div className="mb-5 xl:min-h-[108px]">
-                                <h2 className="text-[40px] leading-[46px] md:text-[48px] md:leading-[54px] xl:max-w-[215px]">
+                                <h2 className="text-[30px] leading-[38px] md:text-[48px] md:leading-[54px] xl:max-w-[215px]">
                                     Security & Audits
                                 </h2>
                             </div>

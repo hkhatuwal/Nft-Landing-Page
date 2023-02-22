@@ -1,13 +1,34 @@
+import { useState } from "react";
+
 const Header = () => {
+    const [navShow, setNavShow] = useState(false);
+
+    console.log(navShow);
+
     return (
-        <header className="absolute top-0 left-0 z-30 w-full">
+        <header
+            className={`${
+                navShow && "show-mobile-nav"
+            }  absolute top-0 left-0 z-30 w-full`}
+        >
             <div className="wrapper">
-                <nav className="flex items-center justify-between pt-[20px]">
-                    <a href="#" className="inline-block h-[96px] w-[228px]">
-                        <img src="/assets/images/logo.png" alt="logo" />
+                <nav className="relative flex flex-col pt-[20px] lg:flex-row lg:items-center lg:justify-between">
+                    <a
+                        href="#"
+                        className="inline-block h-[60px] w-fit md:h-[96px] md:w-[228px]"
+                    >
+                        <img
+                            className="object-contain"
+                            src="/assets/images/logo.png"
+                            alt="logo"
+                        />
                     </a>
 
-                    <ul className="flex items-center gap-[40px]">
+                    <ul
+                        className={`${
+                            navShow && "mt-[30px] !flex flex-col gap-[30px]"
+                        } hidden md:gap-[40px] lg:mt-0 lg:flex lg:flex-row lg:items-center`}
+                    >
                         <li>
                             <a
                                 href="#"
@@ -53,6 +74,20 @@ const Header = () => {
                             </a>
                         </li>
                     </ul>
+
+                    <button
+                        onClick={() => setNavShow((prev) => !prev)}
+                        className="absolute top-[37px] right-0 h-[25px] w-[25px] border-0 bg-transparent md:top-[53px] md:h-[30px] md:w-[30px] lg:hidden"
+                    >
+                        {navShow ? (
+                            <img src="/assets/images/close.png" alt="close" />
+                        ) : (
+                            <img
+                                src="/assets/images/hamburger.png"
+                                alt="hamburger"
+                            />
+                        )}
+                    </button>
                 </nav>
             </div>
         </header>
