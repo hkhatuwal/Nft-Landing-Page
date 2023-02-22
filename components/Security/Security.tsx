@@ -1,6 +1,6 @@
 const Security = () => {
     return (
-        <section className="py-[60px] md:py-[90px]">
+        <section id="security" className="py-[60px] md:py-[90px]">
             <div className="wrapper">
                 <div className="flex flex-col gap-[60px] md:gap-[80px] xl:flex-row xl:items-start xl:gap-[50px]">
                     {/* Single Item */}

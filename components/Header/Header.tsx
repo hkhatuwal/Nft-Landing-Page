@@ -3,8 +3,6 @@ import { useState } from "react";
 const Header = () => {
     const [navShow, setNavShow] = useState(false);
 
-    console.log(navShow);
-
     return (
         <header
             className={`${
@@ -31,7 +29,7 @@ const Header = () => {
                     >
                         <li>
                             <a
-                                href="#"
+                                href="#backers"
                                 className="text-[18px] font-bold leading-[18px]"
                             >
                                 Backers
@@ -40,7 +38,7 @@ const Header = () => {
 
                         <li>
                             <a
-                                href="#"
+                                href="#security"
                                 className="text-[18px] font-bold leading-[18px]"
                             >
                                 Security

@@ -1,6 +1,6 @@
 const Backers = () => {
     return (
-        <section className="py-[50px] md:pt-[100px] md:pb-[70px]">
+        <section id="backers" className="py-[50px] md:pt-[100px] md:pb-[70px]">
             <div className="wrapper">
                 <div className="flex flex-col gap-[60px] lg:flex-row lg:items-center lg:gap-[100px]">
                     {/* Single Item */}
