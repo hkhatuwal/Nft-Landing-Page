@@ -8,7 +8,7 @@ const Security = () => {
                         <div className="xl:max-w-[280px]">
                             <div className="mb-5 xl:min-h-[108px]">
                                 <h2 className="text-[30px] leading-[38px] md:text-[48px] md:leading-[54px] xl:max-w-[215px]">
-                                Security & Audits
+                                    Security & Audits
                                 </h2>
                             </div>
 
