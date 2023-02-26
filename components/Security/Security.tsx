@@ -36,10 +36,6 @@ const Security = () => {
                                 provides audits and software analysis tools for
                                 all layers of the blockchain ecosystem.
                             </p>
-
-                            <a href="#" className="mt-[25px] underline">
-                                Read the report
-                            </a>
                         </div>
                     </div>
                     {/* Single Item */}
@@ -60,10 +56,6 @@ const Security = () => {
                                 hat hackers who perform security audits and
                                 assessments.
                             </p>
-
-                            <a href="#" className="mt-[25px] underline">
-                                Read the report
-                            </a>
                         </div>
                     </div>
                     {/* Single Item */}

@@ -14,12 +14,11 @@ const Hero = () => {
 
                         <div className="absolute -bottom-[230px] -left-0 w-full space-y-3 bg-custom-blue p-8 md:-bottom-[210px] md:w-[520px] md:py-5 md:pl-[70px] md:pr-[30px] xl:-left-[70px]">
                             <h2 className="text-[32px] leading-[38px] md:text-[44px] md:leading-[52px]">
-                                $ 51,674,007.01
+                                19,693
                             </h2>
 
                             <p className="text-[16px] leading-[22px]">
-                                of liquidity is locked in Prime across 7
-                                networks:
+                                testnet users across 7 networks:
                             </p>
 
                             <div className="flex items-center justify-between">

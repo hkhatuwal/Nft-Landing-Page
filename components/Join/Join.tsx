@@ -15,7 +15,7 @@ const Join = () => {
 
                     <ul className="mt-[30px] flex items-center justify-center gap-[20px] md:mt-[60px] md:gap-[30px] lg:mt-[100px]">
                         <li>
-                            <a href="#" className="h-[55px] w-auto">
+                            <a href="https://tr.ee/Tf2l0OVA7e" className="h-[55px] w-auto" target="_blank">
                                 <img
                                     className="object-contain"
                                     src="/assets/images/twitter.png"
@@ -24,7 +24,7 @@ const Join = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="h-[55px] w-auto">
+                            <a href="https://tr.ee/zWAFzgwy-Q" className="h-[55px] w-auto" target="_blank">
                                 <img
                                     className="object-contain"
                                     src="/assets/images/discord.png"
@@ -33,7 +33,7 @@ const Join = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="h-[55px] w-auto">
+                            <a href="https://linktr.ee/primeprotocol" className="h-[55px] w-auto" target="_blank">
                                 <img
                                     className="object-contain"
                                     src="/assets/images/telegram.png"
@@ -43,7 +43,7 @@ const Join = () => {
                         </li>
 
                         <li>
-                            <a href="#" className="h-[55px] w-auto">
+                            <a href="https://tr.ee/0olDv32zZ2" className="h-[55px] w-auto" target="_blank">
                                 <img
                                     className="object-contain"
                                     src="/assets/images/medium.png"
@@ -52,7 +52,7 @@ const Join = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="h-[55px] w-auto">
+                            <a href="https://tr.ee/jVMICCaI5k" className="h-[55px] w-auto" target="_blank">
                                 <img
                                     className="object-contain"
                                     src="/assets/images/youtube.png"
@@ -61,7 +61,7 @@ const Join = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="h-[55px] w-auto">
+                            <a href="https://www.linkedin.com/company/primeprotocol/" className="h-[55px] w-auto" target="_blank">
                                 <img
                                     className="object-contain"
                                     src="/assets/images/linkedin.png"

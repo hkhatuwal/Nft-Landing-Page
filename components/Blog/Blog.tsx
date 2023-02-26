@@ -22,8 +22,9 @@ const Blog = () => {
                             </p>
 
                             <a
-                                href="#"
+                                href="https://medium.com/prime-protocol/introducing-money-markets-on-prime-protocol-dcabf6472b93"
                                 className="mt-[30px] flex h-[47px] w-[200px] items-center justify-center bg-custom-blue text-[18px] font-light uppercase leading-[28px] text-custom-white lg:mt-[50px]"
+                                target="_blank"
                             >
                                 READ MORE
                             </a>
@@ -53,8 +54,9 @@ const Blog = () => {
                             </p>
 
                             <a
-                                href="#"
+                                href="https://www.youtube.com/watch?v=JV3Ukd_fo5s"
                                 className="mt-[30px] flex h-[47px] w-[200px] items-center justify-center bg-custom-blue text-[18px] font-light uppercase leading-[28px] text-custom-white lg:mt-[50px]"
+                                target="_blank"
                             >
                                 WATCH VIDEO
                             </a>
@@ -84,8 +86,9 @@ const Blog = () => {
                             </p>
 
                             <a
-                                href="#"
+                                href="https://medium.com/prime-protocol/introducing-universal-access-on-prime-protocol-originate-a-transaction-on-any-chain-f73137d3ab7c"
                                 className="mt-[30px] flex h-[47px] w-[200px] items-center justify-center bg-custom-blue text-[18px] font-light uppercase leading-[28px] text-custom-white lg:mt-[50px]"
+                                target="_blank"
                             >
                                 READ MORE
                             </a>

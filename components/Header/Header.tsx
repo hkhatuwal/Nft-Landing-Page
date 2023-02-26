@@ -47,8 +47,9 @@ const Header = () => {
 
                         <li>
                             <a
-                                href="#"
+                                href="https://linktr.ee/primeprotocol"
                                 className="text-[18px] font-bold leading-[18px]"
+                                target="_blank"
                             >
                                 Community
                             </a>
@@ -56,8 +57,9 @@ const Header = () => {
 
                         <li>
                             <a
-                                href="#"
+                                href="https://docs.primeprotocol.xyz/"
                                 className="text-[18px] font-bold leading-[18px]"
+                                target="_blank"
                             >
                                 Docs
                             </a>
@@ -65,8 +67,9 @@ const Header = () => {
 
                         <li>
                             <a
-                                href="#"
+                                href="https://app.primeprotocol.xyz/"
                                 className="flex h-[43px] w-[122px] items-center justify-center border-2 border-custom-white text-[18px] font-bold leading-[18px] transition-all duration-150 hover:border-transparent hover:bg-custom-blue hover:text-custom-white"
+                                target="_blank"
                             >
                                 App
                             </a>
