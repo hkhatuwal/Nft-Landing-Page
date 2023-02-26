@@ -98,12 +98,12 @@ export default function Document() {
                     async
                     src="https://www.googletagmanager.com/gtag/js?id=G-NYW1ZJC3Q6"
                 ></script>
-                <script>
+                {/* <script>
 					window.dataLayer = window.dataLayer || [];
-					function gtag(){window.dataLayer.push(arguments)}
+					function gtag(){dataLayer.push(arguments)}
 					gtag('js', new Date());
 					gtag('config', 'G-KGQMHPCCG7');
-				</script>
+				</script> */}
                 <Main />
                 <NextScript />
             </body>
