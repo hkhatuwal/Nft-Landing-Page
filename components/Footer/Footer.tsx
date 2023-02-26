@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Footer = () => {
     return (
         <footer className="py-[50px] md:py-[100px]">
@@ -17,16 +19,17 @@ const Footer = () => {
                         </button>
                     </div>
 
-                    <div className="relative h-[92px] w-[193px]">
-                        <a href="#">
-                            <img
-                                className="object-contain"
+                    <div className="relative w-[193px]">
+                        <a href="#" className="relative h-[92px] w-[193px]">
+                            <Image
                                 src="/assets/images/logo.png"
                                 alt="logo"
+                                layout="fill"
+                                objectFit="contain"
                             />
                         </a>
 
-                        <p className="absolute bottom-2 right-2 text-[12px] leading-[28px]">
+                        <p className="absolute bottom-2 right-1 text-[12px] leading-[28px]">
                             © 2023 Prime Protocol
                         </p>
                     </div>
