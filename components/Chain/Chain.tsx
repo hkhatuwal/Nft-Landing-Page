@@ -51,7 +51,7 @@ const Chain = () => {
 
                     <div className="mx-auto w-full md:w-[455px]">
                         <Image
-                            src="/assets/images/chain.png"
+                            src="/assets/images/chain.gif"
                             alt="chain"
                             layout="responsive"
                             objectFit="contain"
