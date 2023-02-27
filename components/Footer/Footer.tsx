@@ -72,7 +72,7 @@ const Footer = () => {
                         </a>
 
                         <p className="absolute bottom-2 right-1 text-[12px] leading-[28px]">
-                            © 2023 Prime Protocol
+                            © 2023 Prime Protocol Inc.
                         </p>
                     </div>
                 </div>
