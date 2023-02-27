@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Security = () => {
     return (
         <section id="security" className="py-[60px] md:py-[90px]">
@@ -23,11 +25,15 @@ const Security = () => {
                     {/* Single Item */}
                     <div className="flex-1">
                         <div className="">
-                            <div className="mb-5 xl:min-h-[108px]">
-                                <img
-                                    className="ml-0 h-[50px] w-[160px] object-contain xl:mx-auto"
+                            <div className="mb-5 h-[50px] w-[160px] xl:mx-auto xl:min-h-[108px]">
+                                <Image
+                                    className="ml-0"
                                     src="/assets/images/veridise.png"
                                     alt="veridise"
+                                    layout="responsive"
+                                    objectFit="contain"
+                                    width={160}
+                                    height={50}
                                 />
                             </div>
 
@@ -43,11 +49,15 @@ const Security = () => {
                     {/* Single Item */}
                     <div className="flex-1">
                         <div className="">
-                            <div className="mb-5 xl:min-h-[108px]">
-                                <img
-                                    className="ml-0 h-[99px] w-[163px] object-contain xl:mx-auto"
+                            <div className="mb-5 h-[99px] w-[163px] xl:mx-auto xl:min-h-[108px]">
+                                <Image
+                                    className="ml-0"
                                     src="/assets/images/ackee.png"
                                     alt="ackee"
+                                    layout="responsive"
+                                    objectFit="contain"
+                                    width={163}
+                                    height={99}
                                 />
                             </div>
 

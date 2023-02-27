@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Chain = () => {
     return (
         <section className="bg-custom-blue py-[50px] md:pt-[90px] md:pb-[75px]">
@@ -48,10 +50,13 @@ const Chain = () => {
                     </div>
 
                     <div className="mx-auto w-full md:w-[455px]">
-                        <img
-                            className="object-contain"
+                        <Image
                             src="/assets/images/chain.png"
                             alt="chain"
+                            layout="responsive"
+                            objectFit="contain"
+                            width={455}
+                            height={460}
                         />
                     </div>
                 </div>

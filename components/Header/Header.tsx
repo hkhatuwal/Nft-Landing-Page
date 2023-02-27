@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 const Header = () => {
     const [navShow, setNavShow] = useState(false);
@@ -13,12 +14,13 @@ const Header = () => {
                 <nav className="relative flex flex-col pt-[20px] lg:flex-row lg:items-center lg:justify-between">
                     <a
                         href="#"
-                        className="inline-block h-[60px] w-fit md:h-[96px] md:w-[228px]"
+                        className="relative inline-block h-[60px] w-[142px] md:h-[96px] md:w-[228px]"
                     >
-                        <img
-                            className="object-contain"
+                        <Image
                             src="/assets/images/logo.png"
                             alt="logo"
+                            layout="fill"
+                            objectFit="contain"
                         />
                     </a>
 
@@ -81,11 +83,16 @@ const Header = () => {
                         className="absolute top-[37px] right-0 h-[25px] w-[25px] border-0 bg-transparent md:top-[53px] md:h-[30px] md:w-[30px] lg:hidden"
                     >
                         {navShow ? (
-                            <img src="/assets/images/close.png" alt="close" />
+                            <Image
+                                src="/assets/images/close.png"
+                                alt="close"
+                                layout="fill"
+                            />
                         ) : (
-                            <img
+                            <Image
                                 src="/assets/images/hamburger.png"
                                 alt="hamburger"
+                                layout="fill"
                             />
                         )}
                     </button>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Blog = () => {
     return (
         <section className="bg-custom-white py-[50px] md:pt-[80px] md:pb-[100px]">
@@ -5,8 +7,13 @@ const Blog = () => {
                 <div className="mx-auto grid w-full grid-cols-1 gap-[40px] md:max-w-[70%] md:gap-[60px] lg:max-w-full lg:grid-cols-2 lg:gap-y-[70px] lg:gap-x-[25px] xl:grid-cols-3 xl:gap-[25px] xl:gap-y-0">
                     {/* Single Item */}
                     <div>
-                        <div className="h-[200px] md:h-[280px] xl:h-[234px]">
-                            <img src="/assets/images/money.jpg" alt="money" />
+                        <div className="relative h-[200px] md:h-[280px] xl:h-[234px]">
+                            <Image
+                                src="/assets/images/money.jpg"
+                                alt="money"
+                                layout="fill"
+                                objectFit="cover"
+                            />
                         </div>
 
                         <div className="mt-[30px]">
@@ -33,10 +40,12 @@ const Blog = () => {
                     {/* Single Item */}
                     {/* Single Item */}
                     <div>
-                        <div className="h-[200px] md:h-[280px] xl:h-[234px]">
-                            <img
+                        <div className="relative h-[200px] md:h-[280px] xl:h-[234px]">
+                            <Image
                                 src="/assets/images/polkadot.jpg"
                                 alt="polkadot"
+                                layout="fill"
+                                objectFit="cover"
                             />
                         </div>
 
@@ -65,10 +74,12 @@ const Blog = () => {
 
                     {/* Single Item */}
                     <div>
-                        <div className="h-[200px] md:h-[280px] xl:h-[234px]">
-                            <img
+                        <div className="relative h-[200px] md:h-[280px] xl:h-[234px]">
+                            <Image
                                 src="/assets/images/universal.jpg"
                                 alt="universal"
+                                layout="fill"
+                                objectFit="cover"
                             />
                         </div>
 

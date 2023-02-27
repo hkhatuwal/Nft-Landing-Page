@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Backers = () => {
     return (
         <section id="backers" className="py-[50px] md:pt-[100px] md:pb-[70px]">
@@ -11,11 +13,12 @@ const Backers = () => {
                             </h2>
                         </div>
 
-                        <div className="mt-[40px] h-auto w-full md:h-[370px] md:w-[447px] lg:mx-auto lg:mt-[70px]">
-                            <img
-                                className="object-contain"
+                        <div className="relative mt-[40px] h-[277px] md:h-[370px] md:w-[447px] lg:mx-auto lg:mt-[70px]">
+                            <Image
                                 src="/assets/images/backers.png"
                                 alt="backers"
+                                layout="fill"
+                                objectFit="contain"
                             />
                         </div>
                     </div>
@@ -29,11 +32,12 @@ const Backers = () => {
                             </h2>
                         </div>
 
-                        <div className="mt-[40px] h-auto w-full md:h-[364px] md:w-[452px] lg:mx-auto lg:mt-[70px]">
-                            <img
-                                className="object-contain"
+                        <div className="relative mt-[40px] h-[270px] md:h-[364px] md:w-[452px] lg:mx-auto lg:mt-[70px]">
+                            <Image
                                 src="/assets/images/collaborators.png"
                                 alt="collaborators"
+                                layout="fill"
+                                objectFit="contain"
                             />
                         </div>
                     </div>
