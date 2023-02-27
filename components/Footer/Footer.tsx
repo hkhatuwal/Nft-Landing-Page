@@ -1,69 +1,84 @@
+import Image from "next/image";
+import axios from 'axios';
+import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+
 const Footer = () => {
-	return (
-		<section className="bg-brand-primary">
-			<div className="mx-6 py-[64px] md:mx-[100px]">
-				<div className="flex flex-col md:flex-row">
-					<div>
-						<img className="h-12" src="/assets/prime-logo-white.svg" />
-						<p className="mt-6 font-mono text-4xl font-semibold text-white uppercase">
-							Prime <br /> Protocol
-						</p>
-						<a href="mailto:contact@primeprotocol.xyz">
-							<p className="mt-6 font-mono font-semibold text-white">contact@primeprotocol.xyz</p>
-						</a>
-						<div className="mt-6">
-							<div className="flex space-x-4">
-								<a href="https://twitter.com/prime_protocol">
-									<img src="/assets/icons/twitter.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Twitter" />
-								</a>
-								<a href="https://discord.gg/KdskpZ7N3y">
-									<img src="/assets/icons/discord.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Discord" />
-								</a>
-								<a href="https://medium.com/@primeprotocol">
-									<img src="/assets/icons/medium.svg" className="transition-all duration-200 opacity-80 hover:opacity-100" alt="Medium" />
-								</a>
-							</div>
-						</div>
-					</div>
-					<div className="mt-12 flex w-full space-x-[50px] text-white md:mt-0 md:justify-end">
-						{/* <div>
-							<h5 className="font-mono font-bold uppercase"> Developers</h5>
-							<div className="mt-6 space-y-1 text-sm">
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Sign Up</li>
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Documentation</li>
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Community Discord</li>
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Newsletter</li>
-							</div>
-						</div> */}
-						<div>
-							<h5 className="font-mono font-bold uppercase"> Contact</h5>
-							<div className="mt-6 space-y-2 text-sm ">
-								{/* <li className="font-mono list-none cursor-pointer hover:font-semibold">General Inquiries</li> */}
-								{/* <li className="font-mono list-none cursor-pointer hover:font-semibold">Press</li>
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">Sales</li> */}
 
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">
-									<a href="https://discord.com/invite/KdskpZ7N3y">Discord</a>
-								</li>
+    const [email, setEmail] = useState('');
 
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">
-									<a href="mailto:contact@primeprotocol.xyz">Email</a>
-								</li>
+	// on press of a button, call the subsribe api
+	const handleSubmit = (e: any) => {
+		console.log('submitting');
+		// show the loading toast
+		const laodingID = toast.loading('Subscribing. Please wait!');
+		e.preventDefault();
+		axios
+			.post('/api/subscribe', { email })
+			.then((res) => {
+				console.log(res);
+				console.log(res.data);
 
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">
-									<a href="https://twitter.com/prime_protocol">Twitter</a>
-								</li>
+				// res.status == success
+				if (res.data.status == 'success') {
+					// dismiss the toast
+					toast.dismiss(laodingID);
+					// show the success toast
+					toast.success('Subscribed successfully!');
+					// clear the email
+					setEmail('');
+				}
+			})
+			.catch((err) => {
+				toast.dismiss(laodingID);
+				// show the success toast
+				toast.success('Please try again!');
 
-								<li className="font-mono list-none cursor-pointer hover:font-semibold">
-									<a href="https://medium.com/@primeprotocol">Medium</a>
-								</li>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
+				console.log(err);
+			});
+	};
+
+    return (
+        <footer className="py-[50px] md:py-[100px]">
+            <Toaster />
+            <div className="wrapper">
+                <div className="flex flex-col gap-[30px] md:flex-row md:items-center md:justify-between md:gap-0">
+                    {/* <div className="flex h-[50px] items-center md:w-[400px] xl:h-[80px] xl:w-[740px]">
+                        <input
+                            className="h-full w-full border-2 border-r-0 border-custom-white bg-transparent px-5 text-center text-[16px] font-normal leading-[22px] outline-none xl:text-[22px] xl:leading-[24px]"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Sign up for our newsletter"
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+
+                        <button 
+                            className="flex h-full w-[200px] items-center justify-center border-2 border-custom-white text-[14px] uppercase leading-[20px] transition-all duration-150 hover:bg-custom-blue md:w-[260px] md:text-[16px] md:leading-[22px] xl:text-[22px] xl:leading-[28px]"
+                            onClick={(e) => handleSubmit(e)}
+                        >
+                            SUBMIT
+                        </button>
+                    </div> */}
+
+                    <div className="relative w-[193px]">
+                        <a href="#" className="relative h-[92px] w-[193px]">
+                            <Image
+                                src="/assets/images/logo.png"
+                                alt="logo"
+                                layout="fill"
+                                objectFit="contain"
+                            />
+                        </a>
+
+                        <p className="absolute bottom-2 right-1 text-[12px] leading-[28px]">
+                            © 2023 Prime Protocol
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
 };
 
 export default Footer;

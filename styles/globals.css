@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply bg-custom-black-bg font-lexend text-[18px] font-normal leading-[24px] text-custom-white md:text-[22px] md:leading-[28px];
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-medium text-custom-white;
+    }
+
+    img {
+        @apply h-full w-full object-cover;
+    }
+
+    a {
+        @apply inline-block;
+    }
+}
+
+@layer components {
+    .wrapper {
+        @apply mx-auto max-w-full px-5 md:px-[45px] lg:px-[65px] 2xl:max-w-[1300px] 2xl:px-0;
+    }
+
+    .show-mobile-nav {
+        @apply !fixed h-screen bg-custom-black-bg;
+    }
+}
+
+.hero__area {
+    background-image: url(../public/assets/images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
