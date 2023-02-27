@@ -31,7 +31,6 @@ const Blog = () => {
                         </div>
                     </div>
                     {/* Single Item */}
-
                     {/* Single Item */}
                     <div>
                         <div className="h-[200px] md:h-[280px] xl:h-[234px]">
