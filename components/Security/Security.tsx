@@ -15,7 +15,7 @@ const Security = () => {
                             </div>
 
                             <p className="xl:min-h-[140px]">
-                                The Prime Protocol's security has been audited
+                                Prime Protocol's security has been audited
                                 by some of the top security companies in crypto.
                             </p>
                         </div>
