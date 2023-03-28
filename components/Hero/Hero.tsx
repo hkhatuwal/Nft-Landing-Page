@@ -16,7 +16,7 @@ const Hero = () => {
 
                         <div className="absolute -bottom-[210px] -left-0 w-full space-y-3 bg-custom-blue p-7 md:-bottom-[210px] md:w-[520px] md:py-5 md:pl-[70px] md:pr-[30px] xl:-left-[70px]">
                             <h2 className="text-[32px] leading-[38px] md:text-[44px] md:leading-[52px]">
-                                31,101
+                                42,366
                             </h2>
 
                             <p className="text-[16px] leading-[22px]">
@@ -24,7 +24,7 @@ const Hero = () => {
                             </p>
 
                             <div className="flex items-center justify-between">
-                                <div className="relative h-[35px] w-[27px] object-contain md:h-[45px]">
+                                <div className="relative h-[30px] w-[22px] object-contain md:h-[40px]">
                                     <Image
                                         src="/assets/images/hero-icon-1.png"
                                         alt="hero icon"
@@ -42,7 +42,7 @@ const Hero = () => {
                                     />
                                 </div>
 
-                                <div className="relative h-[35px] w-[45px] object-contain md:h-[45px]">
+                                <div className="relative h-[30px] w-[40px] object-contain md:h-[40px]">
                                     <Image
                                         src="/assets/images/hero-icon-3.png"
                                         alt="hero icon"
@@ -78,7 +78,7 @@ const Hero = () => {
                                     />
                                 </div>
 
-                                <div className="relative h-[35px] w-[40px] object-contain md:h-[45px]">
+                                <div className="relative h-[30px] w-[35px] object-contain md:h-[40px]">
                                     <Image
                                         src="/assets/images/hero-icon-7.png"
                                         alt="hero icon"

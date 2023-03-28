@@ -47,7 +47,7 @@ const Join = () => {
                         <li>
                             <a
                                 href="https://linktr.ee/primeprotocol"
-                                className="relative h-[40px] w-[40px] md:h-[55px] md:w-[58px]"
+                                className="relative h-[40px] w-[40px] md:h-[58px] md:w-[60px]"
                                 target="_blank"
                             >
                                 <Image
@@ -90,7 +90,7 @@ const Join = () => {
                         <li>
                             <a
                                 href="https://www.linkedin.com/company/primeprotocol/"
-                                className="relative h-[40px] w-[40px] md:h-[55px] md:w-[68px]"
+                                className="relative h-[40px] w-[40px] md:h-[52px] md:w-[65px]"
                                 target="_blank"
                             >
                                 <Image
