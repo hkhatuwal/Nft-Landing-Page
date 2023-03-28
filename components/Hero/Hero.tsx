@@ -24,7 +24,7 @@ const Hero = () => {
                             </p>
 
                             <div className="flex items-center justify-between">
-                                <div className="relative h-[30px] w-[22px] object-contain md:h-[40px]">
+                                <div>
                                     <Image
                                         src="/assets/images/Integrations2opt 1.png"
                                         alt="hero icon"
