@@ -24,7 +24,7 @@ const Hero = () => {
                             </p>
 
                             <div className="flex items-center justify-between">
-                                <div className="relative h-[33px] w-[25px] object-contain md:h-[43px]">
+                                <div className="relative h-[30px] w-[22px] object-contain md:h-[40px]">
                                     <Image
                                         src="/assets/images/hero-icon-1.png"
                                         alt="hero icon"
@@ -42,7 +42,7 @@ const Hero = () => {
                                     />
                                 </div>
 
-                                <div className="relative h-[33px] w-[43px] object-contain md:h-[43px]">
+                                <div className="relative h-[30px] w-[40px] object-contain md:h-[40px]">
                                     <Image
                                         src="/assets/images/hero-icon-3.png"
                                         alt="hero icon"
@@ -78,7 +78,7 @@ const Hero = () => {
                                     />
                                 </div>
 
-                                <div className="relative h-[33px] w-[38px] object-contain md:h-[43px]">
+                                <div className="relative h-[30px] w-[35px] object-contain md:h-[40px]">
                                     <Image
                                         src="/assets/images/hero-icon-7.png"
                                         alt="hero icon"
