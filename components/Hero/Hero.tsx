@@ -20,72 +20,16 @@ const Hero = () => {
                             </h2>
 
                             <p className="text-[16px] leading-[22px]">
-                                testnet users across 7 networks:
+                                testnet users across 8 networks:
                             </p>
 
                             <div className="flex items-center justify-between">
-                                <div className="relative h-[30px] w-[22px] object-contain md:h-[40px]">
-                                    <Image
-                                        src="/assets/images/hero-icon-1.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-
-                                <div className="relative h-[35px] w-[45px] object-contain md:h-[45px]">
-                                    <Image
-                                        src="/assets/images/hero-icon-2.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-
-                                <div className="relative h-[30px] w-[40px] object-contain md:h-[40px]">
-                                    <Image
-                                        src="/assets/images/hero-icon-3.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-
-                                <div className="relative h-[35px] w-[60px] object-contain md:h-[45px]">
-                                    <Image
-                                        src="/assets/images/hero-icon-4.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-
-                                <div className="relative h-[35px] w-[45px] object-contain md:h-[45px]">
-                                    <Image
-                                        src="/assets/images/hero-icon-5.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-
-                                <div className="relative h-[35px] w-[41px] object-contain md:h-[45px]">
-                                    <Image
-                                        src="/assets/images/hero-icon-6.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-
-                                <div className="relative h-[30px] w-[35px] object-contain md:h-[40px]">
-                                    <Image
-                                        src="/assets/images/hero-icon-7.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
+                                <Image
+                                    src="/assets/images/Integrations2opt 1.png"
+                                    alt="hero icon"
+                                    layout="fill"
+                                    objectFit="contain"
+                                />
                             </div>
                         </div>
                     </div>
