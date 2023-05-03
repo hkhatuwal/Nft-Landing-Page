@@ -16,7 +16,7 @@ const Hero = () => {
 
                         <div className="absolute -bottom-[210px] -left-0 w-full space-y-3 bg-custom-blue p-7 md:-bottom-[210px] md:w-[520px] md:py-5 md:pl-[70px] md:pr-[30px] xl:-left-[70px]">
                             <h2 className="text-[32px] leading-[38px] md:text-[44px] md:leading-[52px]">
-                                51,519
+                                67,000+
                             </h2>
 
                             <p className="text-[16px] leading-[22px]">
