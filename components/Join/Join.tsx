@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const Join = () => {
     return (
-        <section className="bg-custom-blue py-[50px] md:py-[120px]">
+        <section className="bg-custom-white py-[50px] md:py-[120px]">
             <div className="wrapper">
-                <div className="mx-auto max-w-[1095px] text-center">
+                <div className="bg-custom-blue p-10   rounded-3xl mx-auto  text-center">
                     <h2 className="mb-[25px] text-[30px] leading-[38px] md:text-[48px] md:leading-[54px]">
                         Join the Prime community
                         </h2>

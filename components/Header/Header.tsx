@@ -8,13 +8,13 @@ const Header = () => {
         <header
             className={`${
                 navShow && "show-mobile-nav"
-            }  absolute top-0 left-0 z-30 w-full`}
+            }  absolute top-0 left-0 z-30 w-full mt-5`}
         >
             <div className="wrapper">
                 <nav className="relative flex flex-col pt-[20px] lg:flex-row lg:items-center lg:justify-between">
                     <a
                         href="#"
-                        className="relative inline-block h-[60px] w-[142px] md:h-[96px] md:w-[228px]"
+                        className="relative inline-block h-[60px] w-[142px] md:h-[60px] md:w-[150px]"
                     >
                         <Image
                             src="/assets/images/logo.png"
@@ -32,16 +32,16 @@ const Header = () => {
                         <li>
                             <a
                                 href="#backers"
-                                className="text-[18px] font-bold leading-[18px]"
+                                className="text-[18px]  leading-[18px]"
                             >
-                                Backers
+                                Getting Started
                             </a>
                         </li>
 
                         <li>
                             <a
                                 href="#security"
-                                className="text-[18px] font-bold leading-[18px]"
+                                className="text-[18px]  leading-[18px]"
                             >
                                 Security
                             </a>
@@ -70,7 +70,7 @@ const Header = () => {
                         <li>
                             <a
                                 href="https://app.primeprotocol.xyz/"
-                                className="flex h-[43px] w-[122px] items-center justify-center border-2 border-custom-white text-[18px] font-bold leading-[18px] transition-all duration-150 hover:border-transparent hover:bg-custom-blue hover:text-custom-white"
+                                className="flex h-[43px] w-[122px] items-center justify-center  text-[18px] rounded leading-[18px] transition-all duration-150 bg-custom-blue hover:border-transparent hover:bg-custom-blue/75 hover:text-custom-white"
                                 target="_blank"
                             >
                                 App

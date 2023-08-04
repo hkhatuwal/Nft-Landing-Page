@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
     html {
         @apply scroll-smooth;
     }
 
     body {
-        @apply bg-custom-black-bg font-lexend text-[18px] font-normal leading-[24px] text-custom-white md:text-[22px] md:leading-[28px];
+        font-family: 'Questrial', sans-serif;
+        @apply bg-custom-black-bg  text-[18px] font-normal leading-[24px] text-custom-white md:text-[22px] md:leading-[28px];
     }
 
     h1,
@@ -31,7 +32,7 @@
 
 @layer components {
     .wrapper {
-        @apply mx-auto max-w-full px-5 md:px-[45px] lg:px-[65px] 2xl:max-w-[1300px] 2xl:px-0;
+        @apply mx-auto max-w-full px-5 md:px-[130px] lg:px-[130px] 2xl:max-w-[1300px] 2xl:px-0;
     }
 
     .show-mobile-nav {
@@ -40,8 +41,24 @@
 }
 
 .hero__area {
-    background-image: url(../public/assets/images/hero-bg.jpg);
+    background-image: url(../public/assets/images/hero_bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+#security{
+    background-image: url(../public/assets/images/gradient_1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+.slideUp{
+    top:40px;
+    transform: translateX(-20px);
+    animation: slideUp ease 1s infinite 1.2s;
+}
+@keyframes slideUp {
+    0% {transform: translateY(20px);}
+    100% {transform: translateY(-40px);opacity:1;}
+}
+

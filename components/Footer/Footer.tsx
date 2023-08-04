@@ -1,68 +1,99 @@
 import Image from "next/image";
 import axios from 'axios';
-import { useState } from 'react';
-import toast, { Toaster } from 'react-hot-toast';
+import {useState} from 'react';
+import toast, {Toaster} from 'react-hot-toast';
 
 const Footer = () => {
 
     const [email, setEmail] = useState('');
 
-	// on press of a button, call the subsribe api
-	const handleSubmit = (e: any) => {
-		console.log('submitting');
-		// show the loading toast
-		const laodingID = toast.loading('Subscribing. Please wait!');
-		e.preventDefault();
-		axios
-			.post('/api/subscribe', { email })
-			.then((res) => {
-				console.log(res);
-				console.log(res.data);
+    // on press of a button, call the subsribe api
+    const handleSubmit = (e: any) => {
+        console.log('submitting');
+        // show the loading toast
+        const laodingID = toast.loading('Subscribing. Please wait!');
+        e.preventDefault();
+        axios
+            .post('/api/subscribe', {email})
+            .then((res) => {
+                console.log(res);
+                console.log(res.data);
 
-				// res.status == success
-				if (res.data.status == 'success') {
-					// dismiss the toast
-					toast.dismiss(laodingID);
-					// show the success toast
-					toast.success('Subscribed successfully!');
-					// clear the email
-					setEmail('');
-				}
-			})
-			.catch((err) => {
-				toast.dismiss(laodingID);
-				// show the success toast
-				toast.success('Please try again!');
+                // res.status == success
+                if (res.data.status == 'success') {
+                    // dismiss the toast
+                    toast.dismiss(laodingID);
+                    // show the success toast
+                    toast.success('Subscribed successfully!');
+                    // clear the email
+                    setEmail('');
+                }
+            })
+            .catch((err) => {
+                toast.dismiss(laodingID);
+                // show the success toast
+                toast.success('Please try again!');
 
-				console.log(err);
-			});
-	};
+                console.log(err);
+            });
+    };
 
     return (
-        <footer className="py-[50px] md:py-[100px]">
-            <Toaster />
+        <footer className=" md:pt-[50px] ">
+            <Toaster/>
             <div className="wrapper">
-                <div className="flex flex-col gap-[30px] md:flex-row md:items-center md:justify-between md:gap-0">
-                    {/* <div className="flex h-[50px] items-center md:w-[400px] xl:h-[80px] xl:w-[740px]">
-                        <input
-                            className="h-full w-full border-2 border-r-0 border-custom-white bg-transparent px-5 text-center text-[16px] font-normal leading-[22px] outline-none xl:text-[22px] xl:leading-[24px]"
-                            type="email"
-                            name="email"
-                            id="email"
-                            placeholder="Sign up for our newsletter"
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
 
-                        <button 
-                            className="flex h-full w-[200px] items-center justify-center border-2 border-custom-white text-[14px] uppercase leading-[20px] transition-all duration-150 hover:bg-custom-blue md:w-[260px] md:text-[16px] md:leading-[22px] xl:text-[22px] xl:leading-[28px]"
-                            onClick={(e) => handleSubmit(e)}
+                <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 className="title-font font-medium text-gray-500 tracking-widest text-sm mb-3">Explore</h2>
+                        <nav className="list-none mb-10">
+
+                            <li>
+                                <a className="text-custom-white text-lg hover:text-gray-800">App</a>
+                            </li>
+                            <li>
+                                <a className="text-custom-white text-lg hover:text-gray-800">Documentation</a>
+                            </li>
+                            <li>
+                                <a className="text-custom-white text-lg hover:text-gray-800">FAQ</a>
+                            </li>
+                            <li>
+                                <a className="text-custom-white text-lg hover:text-gray-800">Security</a>
+                            </li>
+                            <li>
+                                <a className="text-custom-white text-lg hover:text-gray-800">Blog</a>
+                            </li>
+                            <li>
+                                <a className="text-custom-white text-lg hover:text-gray-800">Contact Us</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div className="lg:w-2/4 md:w-full w-full px-4">
+                        <h2 className="title-font font-medium text-gray-500 tracking-widest text-sm mb-3">Subscription</h2>
+                        <nav className="list-none mb-10">
+
+                            <li>
+                                <a className="text-custom-white text-lg hover:text-gray-800">App</a>
+                            </li>
+                            <li>
+                                <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
+                            </li>
+                            <li className={'flex flex-row'}>
+                                <input id="message" name="message"
+                                       className="w-2/4 border border-white/50 bg-black px-2 text-lg rounded "
+                                       placeholder="Email"></input>
+                                <button
+                                    className="ml-2 bg-custom-white rounded-xl  text-custom-black px-4 py-2 text-sm font-semibold">Subscribe
+                                </button>
+                            </li>
+
+                        </nav>
+                    </div>
+                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <a
+                            href="#"
+                            className="relative inline-block h-[60px] w-[142px] md:h-[60px] md:w-[150px]"
                         >
-                            SUBMIT
-                        </button>
-                    </div> */}
-
-                    <div className="relative w-[193px]">
-                        <a href="#" className="relative h-[92px] w-[193px]">
                             <Image
                                 src="/assets/images/logo.png"
                                 alt="logo"
@@ -70,13 +101,22 @@ const Footer = () => {
                                 objectFit="contain"
                             />
                         </a>
-
-                        <p className="absolute bottom-2 right-1 text-[12px] leading-[28px]">
-                            © 2023 Prime Protocol Inc.
-                        </p>
                     </div>
                 </div>
+
+
             </div>
+
+            <hr className="my-4 border-t border-gray-300"/>
+            <div className={'p-3'}>
+                <ul className="flex flex-row text-sm gap-5">
+                    <li className={'text-custom-white/50'}>Prime Protocol 2023</li>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookie Preferences</li>
+                </ul>
+            </div>
+
         </footer>
     );
 };

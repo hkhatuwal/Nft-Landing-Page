@@ -8,6 +8,7 @@ import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Join from "../components/Join/Join";
 import Security from "../components/Security/Security";
+import TopAlert from "../components/Alert/TopAlert";
 
 const Home: NextPage = () => {
     return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
                 <title> Prime Protocol - Cross Chain Prime Brokerage </title>
             </Head>
             <div>
+                <TopAlert/>
                 <Header />
 
                 <main>
@@ -23,7 +25,6 @@ const Home: NextPage = () => {
                     <Chain />
                     <Security />
                     <Blog />
-                    <Backers />
                     <Join />
                 </main>
                 <Footer />

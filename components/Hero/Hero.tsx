@@ -1,112 +1,130 @@
 import Image from "next/image";
+import {useEffect, useState} from "react";
 
 const Hero = () => {
+
+    const headingFirstArray = ["Arbitrum","Etherium"]
+    const headingSecondArray = ["Moonbeam","Polygon"]
+    const [translation, setTranslation] = useState("translate-y-[0]")
+    const [index, setIndex] = useState(0)
+
+    function toggle() {
+        if (index == 0) {
+            setIndex(1)
+        } else {
+            setIndex(0)
+        }
+        setTimeout(toggle, 1000)
+    }
+
+    useEffect(function () {
+        toggle()
+    })
+
     return (
-        <section className="hero__area min-h-[768px] pb-[60px] xl:pb-0">
+        <section className="hero__area min-h-[768px] pb-[10px] xl:pb-0 bg-custom-black">
             <div className="wrapper">
-                <div className="flex flex-col gap-[20px] pt-[150px] md:items-start md:gap-[80px] lg:gap-[100px] xl:flex-row">
-                    <div className="relative w-full md:mt-[40px] xl:w-[425px]">
-                        <h1 className="mb-4 text-[30px] leading-[38px] md:text-[48px] md:leading-[54px]">
-                            The First Natively Cross-chain Prime Brokerage
+                <div className="flex flex-col gap-[20px] pt-[150px] ">
+                    <div className="relative w-full ">
+                        <h1 className="mb-2 font-semibold text-[30px] leading-[38px] md:text-[48px] md:leading-[54px] overflow-hidden relative">
+                            Deposit on <span
+                            className={`text-custom-blue  transition-all  absolute slideUp`}>{headingFirstArray[index]}</span>
+                        </h1>
+                        <h1 className="mb-2 font-semibold text-[30px] leading-[38px] md:text-[48px] md:leading-[54px] overflow-hidden relative">
+                            Borrow on <span  className={`text-custom-blue  transition-all  absolute slideUp`}>{headingSecondArray[index]}</span>
+
                         </h1>
 
-                        <h3 className="text-[20px] leading-[24px] md:text-[25px] md:leading-[30px]">
-                            Supply Liquidity & Borrow Assets
-                        </h3>
+                        <a
+                            href="https://app.primeprotocol.xyz/"
+                            className="mt-5 flex h-[40px] w-[122px] items-center justify-center font-semibold  text-[15px] rounded-xl leading-[18px] transition-all duration-150 bg-custom-blue hover:border-transparent hover:bg-custom-blue/75 hover:text-custom-white"
+                            target="_blank"
+                        >
+                            Launch App
+                        </a>
 
-                        <div className="absolute -bottom-[210px] -left-0 w-full space-y-3 bg-custom-blue p-7 md:-bottom-[210px] md:w-[520px] md:py-5 md:pl-[70px] md:pr-[30px] xl:-left-[70px]">
-                            <h2 className="text-[32px] leading-[38px] md:text-[44px] md:leading-[52px]">
-                                67,000+
-                            </h2>
+                    </div>
 
-                            <p className="text-[16px] leading-[22px]">
-                                testnet users across 8 networks:
+                    <div className="hero__cards flex-col gap-5 mt-5 flex md:flex-row md:gap-20">
+
+                        <div className={'hero__card p-8 bg-card-bg rounded-xl flex-1 flex flex-col'}>
+                            <p className={'font-semibold tracking-wider '}>
+                                <span className={'font-bold'}>PRIME </span> is the first natively cross-chain prime
+                                brokerage.
                             </p>
+                            <p className="text-sm tracking-wide mt-3">Backed by the best</p>
+                            <div className='flex flex-row mt-3 justify-between   h-10'>
+                                <div className="w-24  relative">
+                                    <Image src="/assets/images/jump_logo.png" alt="logo"
+                                           layout="fill"
+                                           className='absolute p-0 m-0 text-left'
+                                           objectFit="contain"/>
+                                </div>
+                                <div className="w-80 relative">
+                                    <Image src="/assets/images/framework_logo.png" alt="logo"
+                                           layout="fill"
+                                           className='absolute p-0 m-0'
 
-                            <div className="flex items-center justify-between">
-                                <div className="relative h-[25px] w-[20px] md:h-[35px] md:w-[22px] object-contain">
-                                    <Image
-                                        src="/assets/images/hero-icon-1.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
+                                           objectFit="contain"/>
                                 </div>
-                                <div className="relative h-[25px] w-[25px] md:h-[30px] md:w-[35px] object-contain">
-                                    <Image
-                                        src="/assets/images/hero-icon-2.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-
-                                <div className="relative h-[25px] w-[22px] md:h-[38px] md:w-[35px] object-contain">
-                                    <Image
-                                        src="/assets/images/hero-icon-3.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-
-                                <div className="relative h-[25px] w-[15px] md:h-[35px] md:w-[30px] object-contain">
-                                    <Image
-                                        src="/assets/images/hero-icon-4.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-
-                                <div className="relative h-[25px] w-[26px] md:h-[35px] md:w-[40px] object-contain">
-                                    <Image
-                                        src="/assets/images/hero-icon-5.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-
-                                <div className="relative h-[25px] w-[25px] md:h-[32px] md:w-[37px] object-contain">
-                                    <Image
-                                        src="/assets/images/hero-icon-6.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-
-                                <div className="relative h-[25px] w-[30px] md:h-[35px] md:w-[40px] object-contain">
-                                    <Image
-                                        src="/assets/images/hero-icon-7.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
-                                </div>
-                                <div className="relative h-[25px] w-[25px] md:h-[35px] md:w-[35px] object-contain">
-                                    <Image
-                                        src="/assets/images/hero-icon-8.png"
-                                        alt="hero icon"
-                                        layout="fill"
-                                        objectFit="contain"
-                                    />
+                                <div className="w-[100px] relative">
+                                    <Image src="/assets/images/arrington_capital_logo.png" alt="logo"
+                                           layout="fill"
+                                           className='absolute'
+                                           objectFit="contain"/>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div className={'hero__card p-8 bg-card-bg rounded-xl flex-1 flex flex-col'}>
+                            <p className={'font-semibold'}>
+                                <span className='font-semibold tracking-wider text-2xl'>$10,674,007.1</span>
+                                <p className='text-sm text-white/75 mt-2'>of liquidity is locked in Prime across 6
+                                    networks</p>
+                                <div className='flex flex-row flex-wrap mt-3 justify-between   '>
+                                    <div className="w-1/3  relative h-7 ">
+                                        <Image src="/assets/images/arbitrum.png" alt="logo"
+                                               layout="fill"
+                                               className='absolute p-0 m-0 text-left'
+                                               objectFit="cover"/>
+                                    </div>
+                                    <div className="w-1/3  relative">
 
-                    <div className="mx-auto h-[540px] w-full flex-1 pt-[220px] md:pt-[160px] lg:w-[795px] xl:mr-0 xl:pt-0">
-                        <Image
-                            src="/assets/images/hero.png"
-                            alt="hero"
-                            layout="responsive"
-                            objectFit="contain"
-                            width={795}
-                            height={540}
-                            priority
-                        />
+                                        <Image src="/assets/images/binance.png" alt="logo"
+                                               layout="fill"
+                                               className='absolute p-0 m-0'
+
+                                               objectFit="scale-down"/>
+                                    </div>
+                                    <div className="w-1/3  relative">
+
+
+                                        <Image src="/assets/images/eth.png" alt="logo"
+                                               layout="fill"
+                                               className='absolute'
+                                               objectFit="cover"/>
+                                    </div>
+                                    <div className="w-1/3 mt-2  relative h-10">
+                                        <Image src="/assets/images/moonbeam.png" alt="logo"
+                                               layout="fill"
+                                               className='absolute'
+                                               objectFit="cover"/>
+                                    </div>
+                                    <div className="w-1/3 mt-2  relative h-10">
+                                        <Image src="/assets/images/ava.png" alt="logo"
+                                               layout="fill"
+                                               className='absolute'
+                                               objectFit="scale-down"/>
+                                    </div>
+                                    <div className="w-1/3 mt-2   relative h-10">
+                                        <Image src="/assets/images/polygon_logo.png" alt="logo"
+                                               layout="fill"
+                                               className='absolute'
+                                               objectFit="scale-down"/>
+                                    </div>
+                                </div>
+
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
