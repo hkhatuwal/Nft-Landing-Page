@@ -55,7 +55,8 @@
 .slideUp{
     top:40px;
     transform: translateX(-20px);
-    animation: slideUp ease 1s infinite 1.2s;
+    animation: slideUp  1s infinite;
+    margin-inline: 10px;
 }
 @keyframes slideUp {
     0% {transform: translateY(20px);}
