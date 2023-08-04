@@ -43,8 +43,8 @@ const Footer = () => {
             <Toaster/>
             <div className="wrapper">
 
-                <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
-                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+                <div className="flex-grow flex flex-wrap items-start md:pr-20 -mb-10 md:text-left text-center order-first">
+                    <div className="lg:w-1/4 md:w-1/2 w-full px-4 text-left">
                         <h2 className="title-font font-medium text-gray-500 tracking-widest text-sm mb-3">Explore</h2>
                         <nav className="list-none mb-10">
 
@@ -68,13 +68,11 @@ const Footer = () => {
                             </li>
                         </nav>
                     </div>
-                    <div className="lg:w-2/4 md:w-full w-full px-4">
+                    <div className="lg:w-2/4 md:w-full w-full px-4 text-left">
                         <h2 className="title-font font-medium text-gray-500 tracking-widest text-sm mb-3">Subscription</h2>
                         <nav className="list-none mb-10">
 
-                            <li>
-                                <a className="text-custom-white text-lg hover:text-gray-800">App</a>
-                            </li>
+
                             <li>
                                 <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
                             </li>

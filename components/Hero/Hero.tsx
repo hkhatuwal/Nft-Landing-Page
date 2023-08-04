@@ -28,7 +28,7 @@ const Hero = () => {
     return (
         <section className="hero__area min-h-[768px] pb-[10px] xl:pb-0 bg-custom-black">
             <div className="wrapper">
-                <div className="flex flex-col gap-[20px] pt-[150px] ">
+                <div className="flex flex-col gap-[80px] pt-[200px] ">
                     <div className="relative w-full ">
                         <h1 className="mb-2 font-semibold text-[40px] leading-[38px] md:text-[48px] md:leading-[54px] overflow-hidden relative">
                             Deposit on <span

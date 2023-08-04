@@ -11,7 +11,7 @@ module.exports = {
             colors: {
                 "custom-white": "#fff",
                 "custom-black": "#000",
-                "custom-blue": "#0000F5",
+                "custom-blue": "#0058FA",
                 "custom-black-bg": "#010100",
                 "card-bg": "#1F2122",
                 "card-bg2": "#1A1B1C",
