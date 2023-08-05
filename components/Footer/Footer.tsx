@@ -2,6 +2,8 @@ import Image from "next/image";
 import axios from 'axios';
 import {useState} from 'react';
 import toast, {Toaster} from 'react-hot-toast';
+import Link from "next/link";
+import {footerLinks} from "../../utils/constants";
 
 const Footer = () => {
 
@@ -48,24 +50,11 @@ const Footer = () => {
                         <h2 className="title-font font-medium text-gray-500 tracking-widest text-sm mb-3">Explore</h2>
                         <nav className="list-none mb-10">
 
-                            <li>
-                                <a className="text-custom-white text-lg hover:text-gray-800">App</a>
-                            </li>
-                            <li>
-                                <a className="text-custom-white text-lg hover:text-gray-800">Documentation</a>
-                            </li>
-                            <li>
-                                <a className="text-custom-white text-lg hover:text-gray-800">FAQ</a>
-                            </li>
-                            <li>
-                                <a className="text-custom-white text-lg hover:text-gray-800">Security</a>
-                            </li>
-                            <li>
-                                <a className="text-custom-white text-lg hover:text-gray-800">Blog</a>
-                            </li>
-                            <li>
-                                <a className="text-custom-white text-lg hover:text-gray-800">Contact Us</a>
-                            </li>
+                            {footerLinks.map((item) => (
+                                <li className={"text-custom-white text-lg hover:text-gray-800"} key={item.title}>
+                                    <a href={"/"}>{item.title}</a>
+                                </li>
+                            ))}
                         </nav>
                     </div>
                     <div className="lg:w-2/4 md:w-full w-full px-4 text-left">

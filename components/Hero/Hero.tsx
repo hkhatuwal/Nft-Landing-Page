@@ -49,7 +49,7 @@ const Hero = () => {
 
                     </div>
 
-                    <div className="hero__cards flex-col gap-5 mt-5 flex md:flex-row md:gap-20">
+                    <div className="hero__cards flex-col mb-5 gap-5 mt-5 flex lg:flex-row md:gap-5">
 
                         <div className={'hero__card p-8 bg-card-bg rounded-xl flex-1 flex flex-col'}>
                             <p className={'font-semibold tracking-wider '}>
